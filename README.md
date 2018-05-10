@@ -5,3 +5,6 @@ Tools and functions for the Unit Data Catalog
 
 
 The application is available for use at: https://francimario.shinyapps.io/unit_data/
+
+This R package contains functions about the distributions for
+the unit interval and the estimation of their parameters. 

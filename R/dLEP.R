@@ -12,11 +12,10 @@
 #' \donttest{
 #'   curve(dLEP(y = x, mu = 0, phi = 0.5, nu = 0.5))
 #'}
-#'}
+#'}\
 #' @export
 
-invisible(capture.output(gamlss.dist::gen.Family("SEP", type = "logit")))
-
 dLEP <- function(y, mu, phi, nu){
+  invisible(capture.output(gamlss.dist::gen.Family("SEP", type = "logit")))
   dlogitSEP(x = y, mu = mu, sigma = phi, nu=0 , tau = nu)
 }

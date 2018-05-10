@@ -15,8 +15,7 @@
 #'}
 #' @export
 
-invisible(capture.output(gamlss.dist::gen.Family("TF", type = "logit")))
-
 dLT <- function(y, mu, phi, nu){
+  invisible(capture.output(gamlss.dist::gen.Family("TF", type = "logit")))
   dlogitTF(x = y, mu = mu, sigma = phi, nu = nu)
 }

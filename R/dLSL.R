@@ -18,6 +18,6 @@
 
 dLSL <- function(y, mu, phi, lambda){
   (gamlss.dist::dLO(log(y/(1-y)),mu,1/sqrt(phi))*
-     (2*sqrt(phi)/(y-y^2))*pLO(lambda*log(y/(1-y)),
+     (2*sqrt(phi)/(y-y^2))*gamlss.dist::pLO(lambda*log(y/(1-y)),
                                mu, 1/sqrt(phi)))
 }

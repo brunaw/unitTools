@@ -16,8 +16,7 @@
 #'}
 #' @export
 
-invisible(capture.output(gamlss.dist::gen.Family("SEP", type = "logit")))
-
 dLSEP <- function(y, mu, phi, lambda, tau){
+  invisible(capture.output(gamlss.dist::gen.Family("SEP", type = "logit")))
   dlogitSEP(x = y, mu = mu, sigma = phi, nu = lambda, tau = tau)
 }

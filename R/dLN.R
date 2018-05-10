@@ -14,8 +14,7 @@
 #'}
 #' @export
 
-invisible(capture.output(gamlss.dist::gen.Family("NO", type="logit")))
-
 dLN <- function(y, mu, phi){
+  invisible(capture.output(gamlss.dist::gen.Family("NO", type="logit")))
   dlogitNO(x = y, mu = mu, sigma = phi)
 }

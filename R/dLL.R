@@ -14,8 +14,7 @@
 #'}
 #' @export
 
-invisible(capture.output(gamlss.dist::gen.Family("LO", type="logit")))
-
 dLL <- function(y, mu, phi){
+  invisible(capture.output(gamlss.dist::gen.Family("LO", type="logit")))
   dlogitLO(x = y, mu = mu, sigma = phi)
 }

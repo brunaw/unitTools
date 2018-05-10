@@ -16,8 +16,7 @@
 #'}
 #' @export
 
-invisible(capture.output(gamlss.dist::gen.Family("ST1", type = "logit")))
-
 dLST <- function(y, mu, phi, lambda, tau){
+  invisible(capture.output(gamlss.dist::gen.Family("ST1", type = "logit")))
   dlogitST1(x = y, mu = mu, sigma = phi, nu = lambda, tau = tau)
 }
