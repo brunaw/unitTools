@@ -23,3 +23,8 @@ A curve.
 \description{
 A function to make curves of the distributions.
 }
+\examples{
+{
+curve_fc("beta", par = c(0.5, 0.5))
+}
+}

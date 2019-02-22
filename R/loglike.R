@@ -17,7 +17,6 @@
 #'}
 #'}
 #' @export
-
 loglike <- function(par, model, x, sum = "yes"){
   if(model == "beta"){
     m <- unitTools::dBeta(y = x, mu = par[1], phi = par[2])
@@ -37,6 +36,3 @@ loglike <- function(par, model, x, sum = "yes"){
                 "no" = -log(m) 
   ))
 }
-
-
-

@@ -9,7 +9,7 @@
 #' @param leg logic. Show we show the legends?
 #'
 #' @return A curve.
-#' @example {
+#' @examples{
 #' curve_fc("beta", par = c(0.5, 0.5))
 #' }
 #' @export
